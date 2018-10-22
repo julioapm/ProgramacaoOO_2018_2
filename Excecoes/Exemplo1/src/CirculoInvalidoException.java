@@ -1,4 +1,4 @@
-public class CirculoInvalidoException extends RuntimeException{
+public class CirculoInvalidoException extends Exception{
     public CirculoInvalidoException() {
     }
 

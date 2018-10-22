@@ -34,7 +34,7 @@ public class Circulo {
         return Math.PI * raio * raio;
     }
 
-    public void copia(Circulo umCirculo) {
+    public void copia(Circulo umCirculo) throws CirculoInvalidoException {
         if (umCirculo == null) {
             throw new CirculoInvalidoException("Circulo não pode ser nulo");
         }
