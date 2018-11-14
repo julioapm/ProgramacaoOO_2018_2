@@ -60,12 +60,15 @@ public class LoginForm extends Application {
         Text actionTarget = new Text();
         grid.add(actionTarget,1,5);
 
+        //registro de tratador de evento via metodo de conveniencia
         btn.setOnAction(e -> {
             actionTarget.setFill(Color.FIREBRICK);
             actionTarget.setText("Sign in button pressed!");
         });
 
         DropShadow shadow = new DropShadow();
+        //registro de tratador de evento sem metodo de conveniencia
+        //btn.setOnMouseEntered()
         btn.addEventHandler(MouseEvent.MOUSE_ENTERED, (MouseEvent e) -> {
             btn.setEffect(shadow);
         });
